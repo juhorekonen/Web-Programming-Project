@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipality Election Data</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    
+    <h1 class="h1">Municipality Data Visualization</h1>
+
+    <div id="map"></div>
+
+    <!-- Creating a slider for user to easily switch years from which the data is from
+    The idea is from https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+    <div class="slide-container">
+        <input type="range" class="slider" id="show-year">
+    </div>
+    
+    <!--Paragraph to display the current year-->
+    <p id="show-text"></p>
+
+    <div id="chart"></div>
+
+    <!-- Creating a div for the buttons so I can get them at the same height-->
+    <div class="button-container">
+        <button id="navigation" class="btn btn-primary">Population Data</button>
+        <button id="add-data" class="btn btn-primary">View Estimates</button>
+        <button id="export-data" class="btn btn-primary">Export Chart</button>
+    </div>
+
+    <footer>
+        <p>&copy 2024 Juho Rekonen</p>
+    </footer>
+</body>
+</html>
