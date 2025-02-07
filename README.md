@@ -2,4 +2,4 @@
 Statistical portal project done in "Introduction to Web Programming"
 
 Visit the website here:
-https://xjuhoo.github.io/Web-Programming-Project/
+https://juhorekonen.github.io/Web-Programming-Project/
